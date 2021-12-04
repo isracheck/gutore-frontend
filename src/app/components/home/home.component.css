@@ -1,0 +1,112 @@
+.form-control{
+    border: 0;
+    border-top-left-radius: 500px;
+    border-bottom-left-radius: 500px;
+    color: #000;
+    height: 40px;
+    padding: 6px 48px;
+    text-overflow: ellipsis;
+    width: 40%;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 16px;
+    text-transform: none;
+
+}
+
+.date-control{
+    border: 0;
+    border-top-right-radius: 500px;
+    border-bottom-right-radius: 500px;
+    color: #000;
+    height: 40px;
+    padding: 6px 48px;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 16px;
+    text-transform: none;
+    width: 21%;
+
+}
+
+.center {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+  }
+
+.results {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+  }
+
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 27%;
+    padding: 10px 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+
+  @media screen and (max-width: 600px) {
+
+    .form-control{
+        border: 0;
+        border-radius: 500px;
+        color: #000;
+        height: 40px;
+        padding: 6px 48px;
+        text-overflow: ellipsis;
+        width: 40%;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 16px;
+        text-transform: none;
+    
+    }
+    
+    .date-control{
+        border: 0;
+        border-radius: 500px;
+        color: #000;
+        height: 40px;
+        padding: 6px 48px;
+        text-overflow: ellipsis;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 16px;
+        text-transform: none;
+        width: 21%;
+    
+    }
+
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+  }

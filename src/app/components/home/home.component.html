@@ -1,1 +1,22 @@
-<p>home works!</p>
+<div>
+    <p></p>
+</div>
+<div class="row">
+    <div class="center">
+        <div class="col" [formGroup]="myForm">
+            <input #termino type="text" (keyup)="buscar(termino.value)" (keyup)="buscar(termino.value)"  class="form-control"
+                placeholder="Busca tu negocio favorito...">
+            <input type="date"   class="date-control" formControlName="presentDate">
+        </div>
+    </div>
+</div>
+<div>
+    <p></p>
+</div>
+<div class="results">
+    <div class="row">
+        <div class="column" *ngFor="let item of negocios">
+            <app-card [item]="item" [date]=myForm.value.presentDate></app-card>
+        </div>
+    </div>
+</div>
